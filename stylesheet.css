@@ -1,0 +1,338 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url('https://ak3.picdn.net/shutterstock/videos/4314623/thumb/8.jpg');
+  background-size: cover;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.container{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  height: 85%;
+  width: 85%;
+  background: black;
+  overflow: hidden;
+  background-size: cover;
+  box-shadow: 5px 6px 21px black;
+}
+
+.dots{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.dot{
+  height: 5px;
+  width: 5px;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  margin: 12px;
+}
+
+.active{
+  background: rgb(37, 52, 65);
+}
+
+.fade{
+  z-index: 1;
+  animation-name: slide;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 5%;
+  height: 100%;
+  background: black;
+}
+
+.menu a{
+  text-decoration: none;
+  font-family: 'lato', sans-serif;
+  color: white;
+  padding: 25px;
+  display: block;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a:last-child{
+  position: absolute;
+  bottom: 0;
+}
+
+.menu a:hover{
+  background: rgb(8, 121, 255);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Fallback color */
+}
+
+.modal .foto{
+  position: absolute;
+  background: black;
+  top: 0;
+  width: 100%;
+  background-image: url('5.jpg');
+  left: -200px;
+  height: 100%;
+}
+
+.modal .box{
+  position: absolute;
+  width: 50%;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: white;
+  z-index: 2;
+  transform: skewX(20deg);
+}
+
+.modal .contentt{
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-family: 'lato', sans-serif;
+}
+
+.contentt h4{
+  font-size: 3em;
+  padding: 20;
+  background: rgb(30, 174, 227);
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-family: 'tahoma', sans-serif;
+}
+
+.contentt p{
+  font-size: 1.1em;
+  color: black;
+  text-indent: 20px;
+}
+
+.name{
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  font-family: 'lato', sans-serif;
+  color: white;
+  padding: 20px;
+  padding-right: 180px;
+  background: black;
+  z-index: 2;
+}
+
+.name h2{
+  font-size: 40px;
+}
+
+.modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+ /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Fallback color */
+}
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+ /* Location of the box */
+    background-image: url('8.png');
+    background-size: cover;
+    left: 60px;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white; /* Fallback color */
+}
+
+
+
+.modal3 {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: white;
+
+}
+
+.modal3 p{
+  font-family: 'lato',sans-serif;
+  color: rgb(26, 27, 34);
+  font-size: 4em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.modal4 {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: white;
+
+}
+
+.modal4 p{
+  font-family: 'lato',sans-serif;
+  color: rgb(26, 27, 34);
+  font-size: 4em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.modal5 {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: white;
+
+}
+
+.modal5 p{
+  font-family: 'lato',sans-serif;
+  color: rgb(26, 27, 34);
+  font-size: 4em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close5 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.modal6 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    background-image: url('9.png');
+ /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: white;
+
+}
+
+.modal6 p{
+  font-family: 'lato',sans-serif;
+  color: rgb(26, 27, 34);
+  font-size: 4em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close6 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
